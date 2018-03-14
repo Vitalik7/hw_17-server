@@ -1,25 +1,32 @@
 {
-  "name": "node_servers",
+  "name": "home15",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server/app.js",
-    "start": "node server/app.js",
-    "test": "standard",
-    "test:fix": "standard --fix"
+    "dev": "nodemon app/server.js",
+    "start": "node app/server.js"
+  },
+  "engines": {
+    "node": "8.7.0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "crypto-js": "^3.1.6",
     "express": "^4.16.2",
-    "mongodb": "^3.0.2",
-    "mongoose": "^5.0.4",
-    "mongoose-unique-validator": "^2.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.11.0",
-    "standard": "^10.0.2"
+    "jsonwebtoken": "^8.2.0",
+    "lodash": "^4.15.0",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.10.8",
+    "node-geocoder": "^3.22.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-google-oauth20": "^1.0.0",
+    "socket.io": "^2.0.4",
+    "validator": "^9.4.1"
   }
 }
