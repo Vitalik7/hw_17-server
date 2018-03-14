@@ -1,0 +1,25 @@
+{
+  "name": "node_servers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server/app.js",
+    "start": "node server/app.js",
+    "test": "standard",
+    "test:fix": "standard --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.4",
+    "mongoose-unique-validator": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^10.0.2"
+  }
+}
